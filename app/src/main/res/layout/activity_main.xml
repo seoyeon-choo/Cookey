@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Bottom App Bar -->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="5dp"
+        app:hideOnScroll="false"
+        app:contentInsetStart="0dp">
+
+        <!-- Bottom Navigation View -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Add Item"
+        android:src="@drawable/but"
+        app:layout_anchor="@id/bottomAppBar"
+        app:fabSize="normal"
+        app:maxImageSize="72dp"
+        app:tint="@color/pink"
+        app:backgroundTint="@color/white" />
+
+    <!-- RelativeLayout for the icon, text, and CalendarView -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal">
+
+        <!-- ImageView for the icon -->
+
+        <!-- TextView for the text "cookey" -->
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_foreground" />
+
+        <TextView
+            android:id="@+id/cookeyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="cookey"
+            android:textColor="#000000"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/border_background"
+        android:orientation="horizontal">
+
+        <!-- CalendarView to display the calendar -->
+
+        <!-- TextView to display events for selected date -->
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:firstDayOfWeek="2" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="261dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="#72000000"
+
+            />
+
+        <TextView
+            android:id="@+id/eventTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Events for selected date:"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Add this LinearLayout below the existing LinearLayout for the calendar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/border_background">
+
+        <!-- TextView for displaying time -->
+
+        <!-- TextView for displaying saturation level -->
+
+        <TextView
+            android:id="@+id/timeTextView2"
+            android:layout_width="366dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="17dp"
+            android:gravity="center|left"
+            android:text="Time"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-2dp" />
+
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="347dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="17dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|top"
+            android:text="11:20"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/saturationTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeTextView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/saturationTextView"
+            android:layout_width="378dp"
+            android:layout_height="41dp"
+            android:gravity="top|left"
+            android:text="포화도"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/timeTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/timeTextView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/saturationTextView2"
+            android:layout_width="336dp"
+            android:layout_height="78dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="bottom|right"
+            android:text="75%"
+            android:textColor="#2196F3"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.441"
+            app:layout_constraintStart_toEndOf="@+id/timeTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="#2A5A5A5A"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saturationTextView2" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

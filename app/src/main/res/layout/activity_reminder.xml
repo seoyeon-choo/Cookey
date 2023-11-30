@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Bottom App Bar -->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="5dp"
+        app:hideOnScroll="false"
+        app:contentInsetStart="0dp">
+
+        <!-- Bottom Navigation View -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Add Item"
+        android:src="@drawable/but"
+        app:layout_anchor="@id/bottomAppBar"
+        app:fabSize="normal"
+        app:maxImageSize="72dp"
+        app:tint="@color/pink"
+        app:backgroundTint="@color/white" />
+
+    <!-- RelativeLayout for the icon, text, and CalendarView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal">
+
+        <!-- ImageView for the icon -->
+
+        <!-- TextView for the text "cookey" -->
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_foreground" />
+
+        <TextView
+            android:id="@+id/cookeyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="REMINDERS"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="@color/pink"
+        android:text="추가"
+        app:cornerRadius="30dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="137dp" >
+
+    </ListView>
+
+
+    <!-- LinearLayout to contain CalendarView and TextView side by side -->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

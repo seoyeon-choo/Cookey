@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/refrigerator"
+        android:icon="@drawable/fridge"
+        android:title="한 눈에 보기"
+        />
+
+    <item
+        android:id="@+id/cook"
+        android:icon="@drawable/cook"
+        android:title="냉장고 털기" />
+
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/cart"
+        android:title="원터치 주문" />
+
+    <item
+        android:id="@+id/my"
+        android:icon="@drawable/my"
+        android:title="마이페이지" />
+
+</menu>
