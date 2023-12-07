@@ -1,8 +1,10 @@
 package kr.ac.duksung.cookey_bottom;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -13,11 +15,14 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class LookActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private FrequentlyAdapter adapter;
     private List<FrequentlyItem> dataList;
+    private FloatingActionButton addButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +40,18 @@ public class LookActivity extends AppCompatActivity {
         adapter = new FrequentlyAdapter(dataList);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(adapter);
+
+        //쿡키 버튼을 누를 때 메인 페이지로 돌아가기
+        addButton = findViewById(R.id.addButton);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Finish the current activity (MypageActivity) and start MainActivity
+                Intent intent = new Intent(LookActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override

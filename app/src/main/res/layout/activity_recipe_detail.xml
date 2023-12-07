@@ -52,7 +52,8 @@
         android:layout_marginTop="17dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="17dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <!-- ImageView for the icon -->
 
@@ -73,6 +74,30 @@
             android:textColor="@color/black"
             android:textSize="60sp"
             android:textStyle="bold" />
+
+
+<!--         ImageView for the icon-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="95dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_marginStart="390dp"-->
+<!--            android:src="@drawable/saveicon"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:gravity="bottom"/>-->
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="390dp"
+            android:layout_weight="0"
+            android:background="@drawable/saveicon"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/saveicon"
+            android:gravity="bottom" />
+
+
 
     </LinearLayout>
 
