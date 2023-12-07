@@ -1,11 +1,15 @@
 package kr.ac.duksung.cookey_bottom;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.CalendarView;
 import androidx.annotation.ColorRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import android.widget.TextView;
+import android.view.MenuItem;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -28,7 +32,33 @@ public class MainActivity extends AppCompatActivity {
 
         // Display the current time
         displayCurrentTime();
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        // BottomNavigationView의 아이템 클릭 리스너 설정
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId() == R.id.refrigerator) {
+                    // 냉장고 페이지로 이동
+                    // 이동할 페이지의 액티비티를 지정
+                } else if (item.getItemId() == R.id.cook) {
+                    // 냉장고 털기 페이지로 이동
+                    // 이동할 페이지의 액티비티를 지정
+                } else if (item.getItemId() == R.id.cart) {
+                    // 원터치 주문 페이지로 이동
+                    // 이동할 페이지의 액티비티를 지정
+                } else if (item.getItemId() == R.id.my) {
+                    // 마이페이지로 이동
+                    startActivity(new Intent(MainActivity.this, MypageActivity.class));
+                }
+                return true;
+            }
+        });
+
     }
+
 
     private void setCalendarHeaderTextColor(CalendarView calendarView, @ColorRes int colorRes) {
         int color = ContextCompat.getColor(this, colorRes);
