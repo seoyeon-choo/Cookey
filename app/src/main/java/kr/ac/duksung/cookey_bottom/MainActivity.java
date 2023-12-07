@@ -10,15 +10,22 @@ import androidx.core.content.ContextCompat;
 import android.widget.TextView;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView timeTextView;
+    private RecyclerView recyclerView;
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +41,26 @@ public class MainActivity extends AppCompatActivity {
         // Display the current time
         displayCurrentTime();
 
+        List<FrequentlyItem> dataList = new ArrayList<>();
+        dataList.add(new FrequentlyItem("양파", 5, "2023-12-31", "10일", "1주"));
+        dataList.add(new FrequentlyItem("당근", 3, "2023-12-25", "2일", "3일"));
+
+        FrequentlyAdapter adapter = new FrequentlyAdapter(dataList);
+
+// 추가된 코드: recyclerView 초기화
+        recyclerView = findViewById(R.id.recyclerView);
+
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setAdapter(adapter);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
         // BottomNavigationView의 아이템 클릭 리스너 설정
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if (item.getItemId() == R.id.refrigerator) {
                     // 냉장고 페이지로 이동
-                    // 이동할 페이지의 액티비티를 지정
+                    startActivity(new Intent(MainActivity.this, LookActivity.class));
                 } else if (item.getItemId() == R.id.cook) {
                     // 냉장고 털기 페이지로 이동
                     // 이동할 페이지의 액티비티를 지정
