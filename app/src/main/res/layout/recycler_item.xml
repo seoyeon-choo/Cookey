@@ -1,0 +1,39 @@
+<!-- res/layout/recycler_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/border_background"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ingredientImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/onion" />
+
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="1018dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Default Text"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/smallButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start|top"
+        android:text="Button"
+        android:background="@drawable/rounded_button" />
+
+
+</LinearLayout>
