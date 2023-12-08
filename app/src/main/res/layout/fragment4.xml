@@ -14,16 +14,17 @@
     <LinearLayout
         android:id="@+id/btnTotalItem1"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -35,13 +36,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,25 +52,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem2"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -80,13 +84,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -95,26 +100,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem3"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -126,13 +132,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -141,26 +148,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
-    </LinearLayout>
 
+    </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem4"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -172,13 +180,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -187,25 +196,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem5"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -217,13 +228,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -232,25 +244,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem6"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -262,13 +276,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -277,25 +292,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem7"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -307,13 +324,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -322,25 +340,28 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
+
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem8"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -352,13 +373,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -367,25 +389,28 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
+
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem9"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -397,13 +422,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -412,25 +438,28 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
+
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem10"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -442,13 +471,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -457,25 +487,28 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
+
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem11"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -487,13 +520,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -502,25 +536,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem12"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -532,13 +568,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -547,25 +584,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem13"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -577,13 +616,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -592,25 +632,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem14"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -622,13 +664,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -637,25 +680,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem15"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -667,13 +712,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -682,25 +728,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem16"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -712,13 +760,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -727,25 +776,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem17"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -757,13 +808,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -772,25 +824,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem18"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -802,13 +856,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -817,25 +872,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem19"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -847,13 +904,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -862,25 +920,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem20"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -892,13 +952,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -907,25 +968,27 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
     <!-- Item -->
     <LinearLayout
         android:id="@+id/btnTotalItem21"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/solid_button" >
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/android_img" />
@@ -937,13 +1000,14 @@
             android:layout_marginTop="2dp"
             android:orientation="vertical" >
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:text="Item 1"
                 android:textColor="@color/black"
-                android:textSize="13sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -952,9 +1016,10 @@
                 android:layout_marginTop="3dp"
                 android:text="explanation"
                 android:textColor="@color/black"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

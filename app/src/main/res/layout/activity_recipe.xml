@@ -37,13 +37,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:paddingTop="5dp"
                         android:elevation="1dp"
+                        android:paddingTop="5dp"
                         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
                             android:layout_gravity="center_vertical"
                             android:layout_marginEnd="10dp"
                             android:src="@drawable/icon_foreground" />
@@ -53,9 +53,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Cookey"
-                            android:textColor="@color/black"
                             android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
-                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textSize="60sp"
                             android:textStyle="bold" />
 
                     </androidx.appcompat.widget.Toolbar>
@@ -63,30 +63,32 @@
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabs"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
                         android:background="#fff"
                         android:contentDescription="@string/tab_layout_description"
                         android:elevation="1dp"
                         app:tabGravity="fill"
-                        app:tabIndicatorColor="#364fa3"
+                        app:tabIndicatorColor="@color/pink"
                         app:tabIndicatorHeight="3dp"
                         app:tabMode="fixed"
-                        app:tabSelectedTextColor="#364fa3"
-                        app:tabTextColor="#3a3a3a" />
+                        app:tabPaddingEnd="90dp"
+                        app:tabPaddingStart="90dp"
+                        app:tabSelectedTextColor="@color/pink"
+                        app:tabTextColor="#000000" />
 
                     <FrameLayout
                         android:id="@+id/container"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
                         android:background="#FFFFFF"
+                        android:padding="10dp"
                         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
                     </FrameLayout>
 
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="7dp"
+                        android:layout_height="15dp"
                         android:background="#D9D9D9">
 
                     </FrameLayout>
@@ -112,11 +114,11 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     android:text="전체  레시피"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="40sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -125,11 +127,15 @@
 
                 <SearchView
                     android:id="@+id/searchView"
-                    android:layout_width="250dp"
+                    android:layout_width="500dp"
                     android:layout_height="64dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="30dp"
+                    android:commitIcon="@android:drawable/ic_menu_search"
                     app:layout_constraintStart_toEndOf="@+id/textView2"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:queryBackground="@drawable/searchview_background"
+                    app:queryHint="재료나 레시피를 찾아보세요!" />
 
                 <FrameLayout
                     android:id="@+id/container2"
@@ -154,21 +160,19 @@
 
     <!-- Bottom App Bar -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp">
-
-        <!-- Floating Action Button -->
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomAppBar"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_gravity="bottom"
-            app:contentInsetStart="0dp"
             app:fabCradleMargin="5dp"
-            app:hideOnScroll="false">
+            app:hideOnScroll="false"
+            app:contentInsetStart="0dp" >
 
             <!-- Bottom Navigation View -->
             <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -180,6 +184,8 @@
                 app:menu="@menu/bottom_nav_menu" />
 
         </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <!-- Floating Action Button -->
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/addButton"
