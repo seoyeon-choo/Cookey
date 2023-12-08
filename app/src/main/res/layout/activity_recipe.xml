@@ -34,7 +34,7 @@
 
                     <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbar"
-                        android:layout_width="match_parent"
+                        android:layout_width="400dp"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
                         android:elevation="1dp"
@@ -52,10 +52,10 @@
                             android:id="@+id/titleText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cookey"
+                            android:text="냉장고 털기"
                             android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
                             android:textColor="@color/black"
-                            android:textSize="60sp"
+                            android:textSize="50sp"
                             android:textStyle="bold" />
 
                     </androidx.appcompat.widget.Toolbar>

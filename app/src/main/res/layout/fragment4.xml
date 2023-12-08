@@ -10,7 +10,7 @@
     android:orientation="vertical"
     android:background="@color/white">
 
-    <!-- Item -->
+    <!-- Item 1 -->
     <LinearLayout
         android:id="@+id/btnTotalItem1"
         android:layout_width="match_parent"
@@ -38,6 +38,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -46,6 +47,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -54,11 +56,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 2 -->
     <LinearLayout
         android:id="@+id/btnTotalItem2"
         android:layout_width="match_parent"
@@ -86,6 +97,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -94,6 +106,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -102,11 +115,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 3 -->
     <LinearLayout
         android:id="@+id/btnTotalItem3"
         android:layout_width="match_parent"
@@ -134,6 +156,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -142,6 +165,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -150,11 +174,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 4 -->
     <LinearLayout
         android:id="@+id/btnTotalItem4"
         android:layout_width="match_parent"
@@ -182,6 +215,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -190,6 +224,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -198,11 +233,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 5 -->
     <LinearLayout
         android:id="@+id/btnTotalItem5"
         android:layout_width="match_parent"
@@ -230,6 +274,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -238,6 +283,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -246,11 +292,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 6 -->
     <LinearLayout
         android:id="@+id/btnTotalItem6"
         android:layout_width="match_parent"
@@ -278,6 +333,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -286,6 +342,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -294,11 +351,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 7 -->
     <LinearLayout
         android:id="@+id/btnTotalItem7"
         android:layout_width="match_parent"
@@ -326,6 +392,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -334,6 +401,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -342,12 +410,21 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
 
-    <!-- Item -->
+    <!-- Item 8 -->
     <LinearLayout
         android:id="@+id/btnTotalItem8"
         android:layout_width="match_parent"
@@ -375,6 +452,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -383,6 +461,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -391,12 +470,21 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
 
-    <!-- Item -->
+    <!-- Item 9 -->
     <LinearLayout
         android:id="@+id/btnTotalItem9"
         android:layout_width="match_parent"
@@ -424,6 +512,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -432,6 +521,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -442,10 +532,19 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/totalRecipeTime9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/darkgrey"
+            android:text="시간" />
+
     </LinearLayout>
 
 
-    <!-- Item -->
+    <!-- Item 10 -->
     <LinearLayout
         android:id="@+id/btnTotalItem10"
         android:layout_width="match_parent"
@@ -473,6 +572,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -481,6 +581,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -489,12 +590,21 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
 
-    <!-- Item -->
+    <!-- Item 11 -->
     <LinearLayout
         android:id="@+id/btnTotalItem11"
         android:layout_width="match_parent"
@@ -522,6 +632,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -530,6 +641,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -540,9 +652,18 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/totalRecipeTime11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/darkgrey"
+            android:text="시간" />
+
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 12 -->
     <LinearLayout
         android:id="@+id/btnTotalItem12"
         android:layout_width="match_parent"
@@ -570,6 +691,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -578,6 +700,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -586,11 +709,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 13 -->
     <LinearLayout
         android:id="@+id/btnTotalItem13"
         android:layout_width="match_parent"
@@ -618,6 +750,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -626,6 +759,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -634,11 +768,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 14 -->
     <LinearLayout
         android:id="@+id/btnTotalItem14"
         android:layout_width="match_parent"
@@ -666,6 +809,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -674,6 +818,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -682,11 +827,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 15 -->
     <LinearLayout
         android:id="@+id/btnTotalItem15"
         android:layout_width="match_parent"
@@ -714,6 +868,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -722,6 +877,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -730,11 +886,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 16 -->
     <LinearLayout
         android:id="@+id/btnTotalItem16"
         android:layout_width="match_parent"
@@ -762,6 +927,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -770,6 +936,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -778,11 +945,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 17 -->
     <LinearLayout
         android:id="@+id/btnTotalItem17"
         android:layout_width="match_parent"
@@ -810,6 +986,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -818,6 +995,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -826,11 +1004,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 18 -->
     <LinearLayout
         android:id="@+id/btnTotalItem18"
         android:layout_width="match_parent"
@@ -858,6 +1045,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -866,6 +1054,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -874,11 +1063,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 19 -->
     <LinearLayout
         android:id="@+id/btnTotalItem19"
         android:layout_width="match_parent"
@@ -906,6 +1104,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -914,6 +1113,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -922,11 +1122,20 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
+    <!-- Item 20 -->
     <LinearLayout
         android:id="@+id/btnTotalItem20"
         android:layout_width="match_parent"
@@ -954,6 +1163,7 @@
 
 
             <TextView
+                android:id="@+id/totalRecipeTitle20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -962,6 +1172,7 @@
                 android:textSize="30sp" />
 
             <TextView
+                android:id="@+id/totalRecipeSum20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -970,56 +1181,18 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/totalRecipeTime20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/darkgrey"
+                android:text="시간" />
+
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Item -->
-    <LinearLayout
-        android:id="@+id/btnTotalItem21"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/recipe_button" >
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="2dp"
-            android:orientation="vertical" >
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="Item 1"
-                android:textColor="@color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
 
 </LinearLayout>
