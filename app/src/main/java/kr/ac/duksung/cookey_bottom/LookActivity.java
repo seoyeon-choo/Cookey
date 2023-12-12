@@ -1,11 +1,13 @@
 package kr.ac.duksung.cookey_bottom;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +17,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class LookActivity extends AppCompatActivity {
@@ -23,6 +26,7 @@ public class LookActivity extends AppCompatActivity {
     private FrequentlyAdapter adapter;
     private List<FrequentlyItem> dataList;
     private FloatingActionButton addButton;
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,30 @@ public class LookActivity extends AppCompatActivity {
                 Intent intent = new Intent(LookActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        //네비게이션 바 아이콘 페이지로 이동
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId() == R.id.refrigerator) {
+                    // 냉장고 페이지로 이동
+                    startActivity(new Intent(LookActivity.this, LookActivity.class));
+                } else if (item.getItemId() == R.id.cook) {
+                    // 냉장고 털기 페이지로 이동
+                    startActivity(new Intent(LookActivity.this, RecipeActivity.class));
+                } else if (item.getItemId() == R.id.cart) {
+                    // 원터치 주문 페이지로 직접 URL로 이동
+                    String url = "https://www.kurly.com/main";
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(intent);
+                } else if (item.getItemId() == R.id.my) {
+                    // 마이페이지로 이동
+                    startActivity(new Intent(LookActivity.this, MypageActivity.class));
+                }
+                return true;
             }
         });
     }
