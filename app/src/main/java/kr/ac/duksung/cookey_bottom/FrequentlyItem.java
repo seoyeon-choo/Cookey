@@ -38,7 +38,9 @@ public class FrequentlyItem {
         return expiryDate;
     }
 
-    public void setExpiryDate(String expiryDate) { this.expiryDate = expiryDate; }
+    public void setExpiryDate(String expiryDate) {
+        this.expiryDate = expiryDate;
+    }
 
     public String getRemainingDays() {
         return remainingDays;

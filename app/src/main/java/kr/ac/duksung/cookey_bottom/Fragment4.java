@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+// 전체 레시피
 public class Fragment4 extends Fragment {
     @Nullable
     @Override
