@@ -1,10 +1,18 @@
 package kr.ac.duksung.cookey_bottom;
 
+import static android.content.Intent.getIntent;
+import static android.content.Intent.getIntentOld;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,7 +24,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.ViewHolder> {
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.FrequentlyViewHolder> {
 
     private List<FrequentlyItem> dataList;
 
@@ -52,13 +65,28 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Vi
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public FrequentlyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_item, parent, false);
-        return new ViewHolder(view);
+        return new FrequentlyViewHolder(view);
+    }
+
+    // ViewHolder 클래스. +버튼 동작 관련 코드
+    public static class FrequentlyViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView ingredientImageView;
+        TextView itemTextView;
+        View smallButton;
+
+        public FrequentlyViewHolder(View itemView) {
+            super(itemView);
+            ingredientImageView = itemView.findViewById(R.id.ingredientImageView);
+            itemTextView = itemView.findViewById(R.id.itemTextView);
+            smallButton = itemView.findViewById(R.id.smallButton);
+        }
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull FrequentlyViewHolder holder, int position) {
         FrequentlyItem item = dataList.get(position);
 
         // 텍스트 설정
@@ -69,29 +97,59 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Vi
                 item.getExpiryDate(),
                 item.getRemainingDays(),
                 item.getStorageDuration());
-        holder.textView.setText(itemText);
+        holder.itemTextView.setText(itemText);
 
         // 이미지 설정 (이미지는 실제 데이터에 맞게 설정)
-        holder.imageView.setImageResource(R.drawable.onion);
+        holder.ingredientImageView.setImageResource(R.drawable.onion);
 
         // Set the border color based on the remaining days
         int remainingDaysValue = calculateRemainingDays(item.getExpiryDate()); // Replace this with your actual logic
         setItemBorderColor(holder.itemView, remainingDaysValue);
+
+        // smallButton에 대한 클릭 이벤트 처리
+        if (holder.smallButton != null) {
+            holder.smallButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // 여기서 LookActivity로 이동하는 코드 작성
+                    String url = item.getUrl(); // item 변수로 수정
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.kurly.com/search?sword=%EB%8B%B9%EA%B7%BC"));
+                    view.getContext().startActivity(intent);
+//                    String urlString = "https://www.kurly.com/search";
+//                    Intent intent = getIntent();
+//                    String food = intent.getStringExtra("food");
+//
+//                    urlString = urlString + "?sword=" + food;
+//                    JsoupAsyncTask foodTask = new JsoupAsyncTask();
+//                    foodTask.execute(urlString);
+                }
+            });
+        }
     }
+
+//    private Intent getIntent() {
+//        return null;
+//    }
+    
+//    private class JsoupAsyncTask extends AsyncTask<String, Void, Document> {
+//
+//        protected Document doInBackground(String... params) {
+//            Document doc = null;
+//            try {
+//                doc = Jsoup.connect(params[0]).get();
+//            } catch (Exception e) {
+//                Toast.makeText(getBaseContext(), "network error",
+//                        Toast.LENGTH_SHORT).show();
+//            }
+//            return doc;
+//        }
+//    }
+
+
 
     @Override
     public int getItemCount() {
         return dataList.size();
     }
-
-    static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView textView;
-        ImageView imageView;
-
-        ViewHolder(View itemView) {
-            super(itemView);
-            textView = itemView.findViewById(R.id.itemTextView);
-            imageView = itemView.findViewById(R.id.ingredientImageView);
-        }
-    }
 }
+

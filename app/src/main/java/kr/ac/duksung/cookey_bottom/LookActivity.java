@@ -40,6 +40,11 @@ public class LookActivity extends AppCompatActivity {
         dataList.add(new FrequentlyItem("양파", 5, "2023-12-31", "10일", "1주"));
         dataList.add(new FrequentlyItem("당근", 3, "2023-12-25", "2일", "3일"));
 
+//        //임시 Intent
+//        Intent intent = new Intent(getApplicationContext(), FrequentlyAdapter.class);
+//        intent.putExtra("food", (CharSequence) dataList.get(0));
+//        startActivity(intent);
+
         // Set up RecyclerView
         adapter = new FrequentlyAdapter(dataList);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));

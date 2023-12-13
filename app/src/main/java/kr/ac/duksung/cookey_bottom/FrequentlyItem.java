@@ -6,6 +6,7 @@ public class FrequentlyItem {
     private String expiryDate;
     private String remainingDays;
     private String storageDuration;
+    private String url;
 
     // 생성자, getter 및 setter 메서드는 필요에 따라 추가하세요.
 
@@ -55,5 +56,14 @@ public class FrequentlyItem {
 
     public void setStorageDuration(String storageDuration) {
         this.storageDuration = storageDuration;
+    }
+
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
