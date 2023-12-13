@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:hint="레시피"
+            android:hint="title"
             android:textColor="@color/black"
             android:textSize="60sp"
             android:textStyle="bold" />
@@ -114,7 +114,7 @@
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:hint="@string/recipe_description"
+            android:hint="summary"
             android:paddingLeft="30dp"
             android:paddingRight="70dp"
             android:text="TextView"
@@ -131,8 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="24dp"
-            android:hint="시간"
-            android:text="TextView"
+            android:hint="minute"
             app:layout_constraintEnd_toStartOf="@+id/textView16"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -142,7 +141,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="24dp"
-            android:text="TextView"
+            android:hint="servings"
+            app:layout_constraintEnd_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:hint="difficulty"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -192,7 +201,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="23dp"
-                    android:hint="재료 나열"
+                    android:hint="main_ingredient"
                     android:textSize="20sp"/>
 
             </LinearLayout>
@@ -233,7 +242,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="23dp"
-                    android:hint="요리 순서"
+                    android:hint="step"
                     android:textSize="20sp"/>
 
             </LinearLayout>
