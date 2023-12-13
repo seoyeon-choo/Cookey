@@ -91,13 +91,12 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
 
         // 텍스트 설정
         String itemText = String.format(Locale.getDefault(),
-                "%s\n개수: %d\n소비기한: %s\n남은 기간: %s\n보관일: %s\n 신선도 %d",
+                "%s\n개수: %d\n소비기한: %s\n남은 기간: %s\n보관일: %s",
                 item.getIngredientName(),
                 item.getQuantity(),
                 item.getExpiryDate(),
                 item.getRemainingDays(),
-                item.getStorageDuration(),
-                item.getFreshness());
+                item.getStorageDuration());
         holder.itemTextView.setText(itemText);
 
         // 이미지 설정 (이미지는 실제 데이터에 맞게 설정)

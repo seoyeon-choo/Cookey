@@ -7,7 +7,6 @@ public class FrequentlyItem {
     private String remainingDays;
     private String storageDuration;
     private String url;
-    private int freshness;
 
     // 생성자, getter 및 setter 메서드는 필요에 따라 추가하세요.
 
@@ -17,7 +16,6 @@ public class FrequentlyItem {
         this.expiryDate = expiryDate;
         this.remainingDays = remainingDays;
         this.storageDuration = storageDuration;
-        this.freshness = freshness;
     }
 
     public String getIngredientName() {
@@ -35,9 +33,6 @@ public class FrequentlyItem {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
-    public int getFreshness() { return freshness; }
-    public void setFreshness(int freshness) { this.freshness = freshness; }
 
     public String getExpiryDate() {
         return expiryDate;
