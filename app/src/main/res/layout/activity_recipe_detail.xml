@@ -66,7 +66,7 @@
             android:src="@drawable/icon_foreground" />
 
         <TextView
-            android:id="@+id/recipeTextView"
+            android:id="@+id/recipeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -111,7 +111,7 @@
         android:layout_marginBottom="97dp">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/summary"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:hint="summary"
@@ -126,34 +126,34 @@
             tools:layout_editor_absoluteY="17dp" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/minute"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="24dp"
             android:hint="minute"
-            app:layout_constraintEnd_toStartOf="@+id/textView16"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintEnd_toStartOf="@+id/servings"
+            app:layout_constraintTop_toBottomOf="@+id/summary" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/servings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="24dp"
             android:hint="servings"
-            app:layout_constraintEnd_toStartOf="@+id/textView22"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintEnd_toStartOf="@+id/difficulty"
+            app:layout_constraintTop_toBottomOf="@+id/summary" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/difficulty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="24dp"
             android:hint="difficulty"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintTop_toBottomOf="@+id/summary" />
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -165,7 +165,7 @@
             android:background="@drawable/rounded_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView15"/>
+            app:layout_constraintTop_toBottomOf="@id/minute"/>
 
         <ScrollView
             android:id="@+id/ingredient"
@@ -197,7 +197,7 @@
 
                 <!-- 재료들을 나열하는 부분 -->
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/mainIngredient"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="23dp"
@@ -208,7 +208,7 @@
         </ScrollView>
 
         <ScrollView
-            android:id="@+id/steps"
+            android:id="@+id/recipeSteps"
             android:layout_width="match_parent"
             android:layout_height="450dp"
             android:layout_marginTop="25dp"
@@ -238,7 +238,7 @@
 
                 <!-- 재료들을 나열하는 부분 -->
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/step"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="23dp"
@@ -256,7 +256,7 @@
             android:text="위 레시피는 “만개의 레시피”를 기반으로 작성되었습니다."
             android:layout_marginTop="12dp"
             android:layout_marginBottom="97dp"
-            app:layout_constraintTop_toBottomOf="@id/steps"/>
+            app:layout_constraintTop_toBottomOf="@id/recipeSteps"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
