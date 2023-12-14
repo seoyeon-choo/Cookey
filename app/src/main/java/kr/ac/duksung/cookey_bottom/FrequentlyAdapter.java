@@ -1,4 +1,4 @@
-package kr.ac.duksung.cookey_bottom;
+ package kr.ac.duksung.cookey_bottom;
 
 import static android.content.Intent.getIntent;
 import static android.content.Intent.getIntentOld;
@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -57,6 +58,11 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
             Date expirationDate = sdf.parse(expiryDate);
             Date currentDate = Calendar.getInstance().getTime();
 
+            // Ensure that the expiration date is after the current date
+            if (expirationDate.before(currentDate)) {
+                return 0;
+            }
+
             // Calculate the difference in days
             long diff = expirationDate.getTime() - currentDate.getTime();
             return (int) (diff / (24 * 60 * 60 * 1000));
@@ -80,13 +86,30 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         ImageView ingredientImageView;
         TextView itemTextView;
         View smallButton;
+        Button freshnessButton;  // Add this line
+
 
         public FrequentlyViewHolder(View itemView) {
             super(itemView);
             ingredientImageView = itemView.findViewById(R.id.ingredientImageView);
             itemTextView = itemView.findViewById(R.id.itemTextView);
             smallButton = itemView.findViewById(R.id.smallButton);
+            freshnessButton = itemView.findViewById(R.id.freshnessButton);  // Initialize freshnessButton
+
+
         }
+        public class ViewHolder extends RecyclerView.ViewHolder {
+            public ImageView imageView;
+
+            // other views...
+
+            public ViewHolder(View itemView) {
+                super(itemView);
+                imageView = itemView.findViewById(R.id.imageView); // replace with your actual image view id
+                // initialize other views...
+            }
+        }
+
     }
 
     @Override
@@ -111,8 +134,8 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         int remainingDaysValue = calculateRemainingDays(item.getExpiryDate());
 
         // Set the border color based on the remaining days
-      //  int remainingDaysValue = calculateRemainingDays(item.getExpiryDate()); // Replace this with your actual logic
-       // setItemBorderColor(holder.itemView, remainingDaysValue);
+        //  int remainingDaysValue = calculateRemainingDays(item.getExpiryDate()); // Replace this with your actual logic
+        // setItemBorderColor(holder.itemView, remainingDaysValue);
 
         // smallButton에 대한 클릭 이벤트 처리
         if (holder.smallButton != null) {
@@ -128,9 +151,41 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
                 }
             });
         }
-        setItemBorderColor(holder.itemView, item.getIngredientName());
-
+       setItemBorderColor(holder.itemView, item.getIngredientName());
+        setFreshnessButtonColor(holder.freshnessButton, item.getRemainingDays());
     }
+    private void setFreshnessButtonColor(Button freshnessButton, String remainingDaysText) {
+        // Extract the numeric value from the remainingDaysText
+        int remainingDays = extractNumericValue(remainingDaysText);
+
+        Log.d("RemainingDays", "Remaining Days: " + remainingDays);
+
+        if (remainingDays <= 0) {
+            freshnessButton.setBackgroundResource(R.drawable.circle_red);
+        } else if (remainingDays <= 2) {
+            freshnessButton.setBackgroundResource(R.drawable.circle_red); // 4일 이하면 노란색으로 변경
+        } else if (remainingDays <= 4) {
+            freshnessButton.setBackgroundResource(R.drawable.circle_yellow); // 5일까지는 여전히 빨간색 유지
+        } else {
+            freshnessButton.setBackgroundResource(R.drawable.circle_green);
+        }
+    }
+
+    // Helper method to extract numeric value from the text
+    private int extractNumericValue(String text) {
+        // Remove non-numeric characters and parse to an integer
+        String numericPart = text.replaceAll("[^\\d]", "");
+        try {
+            return Integer.parseInt(numericPart);
+        } catch (NumberFormatException e) {
+            // Handle parsing error, e.g., return a default value
+            return 0;
+        }
+    }
+
+
+
+
     private void setItemBorderColor(View view, String ingredientName) {
         if ("감자".equals(ingredientName) || "닭고기".equals(ingredientName)) {
             // If the item is "감자", set a red border
@@ -152,4 +207,3 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         return dataList.size();
     }
 }
-

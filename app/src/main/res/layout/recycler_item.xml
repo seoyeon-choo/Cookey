@@ -46,13 +46,14 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"></TextView>
 
-            <Button
+            <android.widget.Button
+                android:id="@+id/freshnessButton"
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="6dp"
                 android:layout_gravity="left"
-                android:background="@drawable/circle_red" />
+                android:background="@drawable/circle_green" />
 
         </FrameLayout>
 
@@ -60,7 +61,7 @@
     </LinearLayout>
 
 
-    <Button
+    <android.widget.Button
         android:id="@+id/smallButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
