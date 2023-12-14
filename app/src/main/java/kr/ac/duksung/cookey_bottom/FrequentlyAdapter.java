@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,8 +38,8 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         this.dataList = dataList;
     }
 
-    public void setItemBorderColor(View view, int remainingDays) {
-        if (remainingDays <= 3) {
+    public void setItemBorderColor(View view, int getRemainingDays) {
+        if (getRemainingDays <= 3) {
             view.setBackgroundResource(R.drawable.red_border_background); // Use a red border drawable
         } else {
             // Use the default border drawable or any other color as needed
@@ -89,6 +90,7 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
     public void onBindViewHolder(@NonNull FrequentlyViewHolder holder, int position) {
         FrequentlyItem item = dataList.get(position);
 
+
         // 텍스트 설정
         String itemText = String.format(Locale.getDefault(),
                 "%s\n개수: %d\n소비기한: %s\n남은 기간: %s\n보관일: %s",
@@ -100,12 +102,12 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         holder.itemTextView.setText(itemText);
 
         // 이미지 설정 (이미지는 실제 데이터에 맞게 설정)
-        holder.ingredientImageView.setImageResource(R.drawable.onion);
+        int imageResource = getDrawableResourceId(holder.itemView, item.getImageFileName());
+        holder.ingredientImageView.setImageResource(imageResource);
 
-        // Set the border color based on the remaining days
-        int remainingDaysValue = calculateRemainingDays(item.getExpiryDate()); // Replace this with your actual logic
+
+        int remainingDaysValue = calculateRemainingDays(item.getExpiryDate());
         setItemBorderColor(holder.itemView, remainingDaysValue);
-
         // smallButton에 대한 클릭 이벤트 처리
         if (holder.smallButton != null) {
             holder.smallButton.setOnClickListener(new View.OnClickListener() {
@@ -127,10 +129,18 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         }
     }
 
+    // 이미지 파일 이름을 이용하여 리소스 아이디를 가져오는 메서드
+    private int getDrawableResourceId(View view, String imageName) {
+        int resourceId = view.getContext().getResources().getIdentifier(imageName, "drawable", view.getContext().getPackageName());
+        Log.d("DrawableResource", "Resource ID for " + imageName + ": " + resourceId);
+        return resourceId;
+    }
+
+
 //    private Intent getIntent() {
 //        return null;
 //    }
-    
+
 //    private class JsoupAsyncTask extends AsyncTask<String, Void, Document> {
 //
 //        protected Document doInBackground(String... params) {
