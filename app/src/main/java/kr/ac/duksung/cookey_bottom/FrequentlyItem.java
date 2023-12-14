@@ -7,15 +7,21 @@ public class FrequentlyItem {
     private String remainingDays;
     private String storageDuration;
     private String url;
+    private String imageFileName; // 새로운 필드 추가
 
-    // 생성자, getter 및 setter 메서드는 필요에 따라 추가하세요.
 
-    public FrequentlyItem(String ingredientName, int quantity, String expiryDate, String remainingDays, String storageDuration) {
+
+    public FrequentlyItem(String ingredientName, int quantity, String expiryDate, String remainingDays, String storageDuration, String imageFileName) {
         this.ingredientName = ingredientName;
         this.quantity = quantity;
         this.expiryDate = expiryDate;
         this.remainingDays = remainingDays;
         this.storageDuration = storageDuration;
+        this.imageFileName = imageFileName; // 생성자에서 초기화
+
+    }
+    public String getImageFileName() {
+        return imageFileName;
     }
 
     public String getIngredientName() {
