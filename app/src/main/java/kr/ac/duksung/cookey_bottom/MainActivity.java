@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         displayCurrentTime();
 
         List<FrequentlyItem> dataList = new ArrayList<>();
-        dataList.add(new FrequentlyItem("양파", 5, "2023-12-31", "10일", "1주"));
-        dataList.add(new FrequentlyItem("당근", 3, "2023-12-25", "2일", "3일"));
+        dataList.add(new FrequentlyItem("양파", 5, "2023-12-31", "10일", "1주","egg.png"));
+        dataList.add(new FrequentlyItem("당근", 3, "2023-12-25", "2일", "3일","egg.png"));
 
         FrequentlyAdapter adapter = new FrequentlyAdapter(dataList);
 
