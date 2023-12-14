@@ -38,15 +38,18 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         this.dataList = dataList;
     }
 
-    public void setItemBorderColor(View view, int getremainingDays) {
-        if (getremainingDays <= 3) {
-            view.setBackgroundResource(R.drawable.red_border_background); // Use a red border drawable
+    private void setItemBorderColor(View view, int remainingDays) {
+        if ("감자".equals(((TextView)view.findViewById(R.id.itemTextView)).getText().toString().split("\n")[0])) {
+            // If the item is "감자", set a red border
+            view.setBackgroundResource(R.drawable.red_border_background);
+        } else if (remainingDays <= 3) {
+            // For other items, use the default border or any other color as needed
+            view.setBackgroundResource(R.drawable.border_background);
         } else {
-            // Use the default border drawable or any other color as needed
+            // For other items, use the default border or any other color as needed
             view.setBackgroundResource(R.drawable.border_background);
         }
     }
-
     private int calculateRemainingDays(String expiryDate) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
 
@@ -105,9 +108,11 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         int imageResource = getDrawableResourceId(holder.itemView, item.getImageFileName());
         holder.ingredientImageView.setImageResource(imageResource);
 
+        int remainingDaysValue = calculateRemainingDays(item.getExpiryDate());
+
         // Set the border color based on the remaining days
-        int remainingDaysValue = calculateRemainingDays(item.getExpiryDate()); // Replace this with your actual logic
-        setItemBorderColor(holder.itemView, remainingDaysValue);
+      //  int remainingDaysValue = calculateRemainingDays(item.getExpiryDate()); // Replace this with your actual logic
+       // setItemBorderColor(holder.itemView, remainingDaysValue);
 
         // smallButton에 대한 클릭 이벤트 처리
         if (holder.smallButton != null) {
@@ -123,8 +128,18 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
                 }
             });
         }
-    }
+        setItemBorderColor(holder.itemView, item.getIngredientName());
 
+    }
+    private void setItemBorderColor(View view, String ingredientName) {
+        if ("감자".equals(ingredientName) || "닭고기".equals(ingredientName)) {
+            // If the item is "감자", set a red border
+            view.setBackgroundResource(R.drawable.red_border_background);
+        } else {
+            // For other items, use the default border or any other color as needed
+            view.setBackgroundResource(R.drawable.border_background);
+        }
+    }
     // 이미지 파일 이름을 이용하여 리소스 아이디를 가져오는 메서드
     private int getDrawableResourceId(View view, String imageName) {
         int resourceId = view.getContext().getResources().getIdentifier(imageName, "drawable", view.getContext().getPackageName());
