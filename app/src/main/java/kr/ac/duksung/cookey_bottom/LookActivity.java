@@ -67,10 +67,7 @@ public class LookActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.refrigerator) {
-                    // 냉장고 페이지로 이동
-                    startActivity(new Intent(LookActivity.this, LookActivity.class));
-                } else if (item.getItemId() == R.id.cook) {
+                if (item.getItemId() == R.id.cook) {
                     // 냉장고 털기 페이지로 이동
                     startActivity(new Intent(LookActivity.this, RecipeActivity.class));
                 } else if (item.getItemId() == R.id.cart) {

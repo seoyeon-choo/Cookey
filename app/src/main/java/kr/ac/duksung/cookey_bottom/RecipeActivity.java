@@ -107,9 +107,6 @@ public class RecipeActivity extends AppCompatActivity {
                 if (item.getItemId() == R.id.refrigerator) {
                     // 냉장고 페이지로 이동
                     startActivity(new Intent(RecipeActivity.this, LookActivity.class));
-                } else if (item.getItemId() == R.id.cook) {
-                    // 냉장고 털기 페이지로 이동
-                    startActivity(new Intent(RecipeActivity.this, RecipeActivity.class));
                 } else if (item.getItemId() == R.id.cart) {
                     // 원터치 주문 페이지로 직접 URL로 이동
                     String url = "https://www.kurly.com/main";

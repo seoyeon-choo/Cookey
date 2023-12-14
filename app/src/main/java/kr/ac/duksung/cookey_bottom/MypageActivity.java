@@ -84,9 +84,6 @@ public class MypageActivity extends AppCompatActivity {
                     String url = "https://www.kurly.com/main";
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     startActivity(intent);
-                } else if (item.getItemId() == R.id.my) {
-                    // 마이페이지로 이동
-                    startActivity(new Intent(MypageActivity.this, MypageActivity.class));
                 }
                 return true;
             }
