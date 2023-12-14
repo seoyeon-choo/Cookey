@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         tools:context=".MainActivity">
 
         <!-- Bottom App Bar -->
@@ -18,9 +14,9 @@
             android:id="@+id/bottomAppBar"
             android:layout_width="match_parent"
             android:layout_height="58dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|end"
             app:fabCradleMargin="5dp"
-            app:hideOnScroll="false"
+            app:hideOnScroll="true"
             app:contentInsetStart="0dp">
 
             <!-- Bottom Navigation View -->
@@ -42,6 +38,7 @@
             android:contentDescription="Add Item"
             android:src="@drawable/but"
             app:layout_anchor="@id/bottomAppBar"
+            app:layout_anchorGravity="bottom|end"
             app:fabSize="normal"
             app:maxImageSize="72dp"
             app:tint="@color/pink"
@@ -81,190 +78,219 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout2"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="87dp">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="17dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="17dp"
-            android:background="@drawable/border_background"
-            android:orientation="horizontal">
-
-            <!-- CalendarView to display the calendar -->
-
-            <!-- TextView to display events for selected date -->
-
-            <CalendarView
-                android:id="@+id/calendarView"
-                android:layout_width="17dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:firstDayOfWeek="2" />
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="261dp"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:background="#72000000"
-
-                />
-
-            <TextView
-                android:id="@+id/eventTextView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Events for selected date:"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <!-- Add this LinearLayout below the existing LinearLayout for the calendar -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="136dp"
-            android:layout_marginStart="17dp"
-            android:layout_marginTop="500dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="17dp"
-            android:background="@drawable/border_background">
-
-            <!-- TextView for displaying time -->
-
-            <!-- TextView for displaying saturation level -->
-
-            <TextView
-                android:id="@+id/timeTextView2"
-                android:layout_width="366dp"
-                android:layout_height="42dp"
-                android:layout_marginStart="17dp"
-                android:gravity="center|left"
-                android:text="Time"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="-2dp" />
-
-
-            <TextView
-                android:id="@+id/timeTextView"
-                android:layout_width="347dp"
-                android:layout_height="81dp"
-                android:layout_marginStart="17dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="center|top"
-                android:text="11:20"
-                android:textColor="#000000"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/saturationTextView"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/timeTextView"
-                app:layout_constraintVertical_bias="1.0"
-                tools:ignore="NotSibling" />
-
-            <TextView
-                android:id="@+id/saturationTextView"
-                android:layout_width="378dp"
-                android:layout_height="41dp"
-                android:gravity="top|left"
-                android:text="포화도"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@+id/timeTextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.847"
-                app:layout_constraintStart_toEndOf="@+id/timeTextView2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <ProgressBar
-                android:id="@+id/saturationProgressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="132dp"
-                android:layout_height="128dp"
-                android:layout_gravity="end|bottom"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="16dp"
-                android:indeterminate="false"
-                android:max="100"
-                android:progress="75"
-                android:progressDrawable="@drawable/circular_progress_bar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.622"
-                app:layout_constraintStart_toEndOf="@+id/timeTextView"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.125" />
-
-            <TextView
-                android:id="@+id/progressTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="75%"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/saturationProgressBar"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.764"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <View
-            android:id="@+id/view2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginTop="200dp"
-            android:layout_marginBottom="20dp"
-            android:background="#2A5A5A5A"
-            app:layout_anchorGravity="bottom|center"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/saturationTextView2" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Add this LinearLayout below the existing LinearLayout for the calendar -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/border_background"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBaseline_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <!-- CalendarView to display the calendar -->
+
+                    <!-- TextView to display events for selected date -->
+
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="17dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:firstDayOfWeek="2" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="261dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#72000000"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/eventTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Events for selected date:"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/border_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+                    <!-- TextView for displaying time -->
+
+                    <!-- TextView for displaying saturation level -->
+
+
+                    <TextView
+                        android:id="@+id/timeTextView2"
+                        android:layout_width="366dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center|left"
+                        android:text="Time"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteY="-1dp" />
+
+                    <TextView
+                        android:id="@+id/timeTextView"
+                        android:layout_width="347dp"
+                        android:layout_height="81dp"
+                        android:layout_marginStart="41dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center|top"
+                        android:text="11:20"
+                        android:textColor="#000000"
+                        android:textSize="48sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/saturationTextView"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/timeTextView"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:ignore="NotSibling" />
+
+                    <TextView
+                        android:id="@+id/saturationTextView"
+                        android:layout_width="378dp"
+                        android:layout_height="41dp"
+                        android:gravity="top|left"
+                        android:text="포화도"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/timeTextView2"
+                        app:layout_constraintStart_toStartOf="@+id/timeTextView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/saturationProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="132dp"
+                        android:layout_height="128dp"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="16dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="75"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.622"
+                        app:layout_constraintStart_toEndOf="@+id/timeTextView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.125" />
+
+                    <TextView
+                        android:id="@+id/progressTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="75%"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/saturationProgressBar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.79"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.533" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            app:layout_constraintTop_toBottomOf="@id/favoriteIngredientsTextView" />
 
         <TextView
             android:id="@+id/favoriteIngredientsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="750dp"
             android:text="자주 찾는 재료"
             android:textColor="#191919"
             android:textSize="30sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/orderIngredientsTextView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="13dp"
+            android:background="#2A5A5A5A"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
         <TextView
             android:id="@+id/orderIngredientsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="800dp"
             android:text="필요한 재료를 원터치 주문으로 받아보세요."
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favoriteIngredientsTextView" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="880dp"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/orderIngredientsTextView" />
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
