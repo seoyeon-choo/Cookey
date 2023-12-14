@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:hint="title"
-            android:text="닭한마리손수제비"
+            android:text="감자치즈호떡"
             android:textColor="@color/black"
             android:textSize="60sp"
             android:textStyle="bold" />
@@ -135,7 +135,7 @@
                     android:layout_marginTop="20dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="70dp"
-                    android:text="시원하고 담백한 닭한마리손수제비"
+                    android:text="NO밀가루! 감자치즈호떡 아이들 간식으로 딱 좋아요."
                     android:textSize="35dp"
                     android:textColor="@color/black"
                     app:layout_constraintBaseline_toBottomOf="parent"
@@ -192,7 +192,7 @@
                     android:layout_marginTop="25dp"
                     android:background="@drawable/recipe_main_img_radius"
                     android:clipToOutline="true"
-                    android:src="@drawable/recipe1_main_img"
+                    android:src="@drawable/recipe2_main_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/minute" />
@@ -237,7 +237,7 @@
                             android:layout_height="wrap_content"
                             android:hint="main_ingredient"
                             android:layout_marginStart="20dp"
-                            android:text="밀가루 중력분"
+                            android:text="감자"
                             android:textSize="30sp"
                             android:textColor="@color/black" />
 
@@ -250,7 +250,7 @@
                             android:paddingTop="30dp"
                             android:paddingBottom="30dp"
                             android:layout_marginEnd="20dp"
-                            android:text="1.5컵"
+                            android:text="3~4개"
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -269,7 +269,7 @@
                             android:layout_height="wrap_content"
                             android:hint="main_ingredient"
                             android:layout_marginStart="20dp"
-                            android:text="물"
+                            android:text="마요네즈"
                             android:textSize="30sp"
                             android:textColor="@color/black" />
 
@@ -282,38 +282,7 @@
                             android:paddingTop="30dp"
                             android:paddingBottom="30dp"
                             android:layout_marginEnd="20dp"
-                            android:text="1/2컵"
-                            android:textColor="@color/black"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                    <!-- 재료 -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="horizontal" >
-
-                        <!-- 재료 이름 -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint="main_ingredient"
-                            android:layout_marginStart="20dp"
-                            android:text="손질 닭"
-                            android:textSize="30sp"
-                            android:textColor="@color/black" />
-
-                        <!-- 재료 수량 -->
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="end"
-                            android:hint="quintity"
-                            android:paddingTop="30dp"
-                            android:paddingBottom="30dp"
-                            android:layout_marginEnd="20dp"
-                            android:text="1마리"
+                            android:text="1숟가락"
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -344,7 +313,7 @@
                             android:paddingTop="30dp"
                             android:paddingBottom="30dp"
                             android:layout_marginEnd="20dp"
-                            android:text="0.5T"
+                            android:text="1/2숟가락"
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -362,7 +331,7 @@
                             android:layout_height="wrap_content"
                             android:hint="main_ingredient"
                             android:layout_marginStart="20dp"
-                            android:text="후추"
+                            android:text="버터"
                             android:textSize="30sp"
                             android:textColor="@color/black" />
 
@@ -375,7 +344,7 @@
                             android:paddingTop="30dp"
                             android:paddingBottom="30dp"
                             android:layout_marginEnd="20dp"
-                            android:text="조금"
+                            android:text="약간"
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -393,7 +362,7 @@
                             android:layout_height="wrap_content"
                             android:hint="main_ingredient"
                             android:layout_marginStart="20dp"
-                            android:text="청양고추"
+                            android:text="피자치즈"
                             android:textSize="30sp"
                             android:textColor="@color/black" />
 
@@ -406,7 +375,7 @@
                             android:paddingTop="30dp"
                             android:paddingBottom="30dp"
                             android:layout_marginEnd="20dp"
-                            android:text="1개"
+                            android:text="1종이컵"
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -424,7 +393,7 @@
                             android:layout_height="wrap_content"
                             android:hint="main_ingredient"
                             android:layout_marginStart="20dp"
-                            android:text="식용유"
+                            android:text="설탕"
                             android:textSize="30sp"
                             android:textColor="@color/black" />
 
@@ -437,7 +406,7 @@
                             android:paddingTop="30dp"
                             android:paddingBottom="30dp"
                             android:layout_marginEnd="20dp"
-                            android:text="1T"
+                            android:text="1/2숟가락"
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -455,7 +424,7 @@
                             android:layout_height="wrap_content"
                             android:hint="main_ingredient"
                             android:layout_marginStart="20dp"
-                            android:text="다진마늘"
+                            android:text="전분가루"
                             android:textSize="30sp"
                             android:textColor="@color/black" />
 
@@ -468,69 +437,7 @@
                             android:paddingTop="30dp"
                             android:paddingBottom="30dp"
                             android:layout_marginEnd="20dp"
-                            android:text="0.5T"
-                            android:textColor="@color/black"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                    <!-- 재료 -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="horizontal" >
-
-                        <!-- 재료 이름 -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint="main_ingredient"
-                            android:layout_marginStart="20dp"
-                            android:text="대파"
-                            android:textSize="30sp"
-                            android:textColor="@color/black" />
-
-                        <!-- 재료 수량 -->
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="end"
-                            android:hint="quintity"
-                            android:paddingTop="30dp"
-                            android:paddingBottom="30dp"
-                            android:layout_marginEnd="20dp"
-                            android:text="1대"
-                            android:textColor="@color/black"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                    <!-- 재료 -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="horizontal" >
-
-                        <!-- 재료 이름 -->
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint="main_ingredient"
-                            android:layout_marginStart="20dp"
-                            android:text="애호박"
-                            android:textSize="30sp"
-                            android:textColor="@color/black" />
-
-                        <!-- 재료 수량 -->
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="end"
-                            android:hint="quintity"
-                            android:paddingTop="30dp"
-                            android:paddingBottom="30dp"
-                            android:layout_marginEnd="20dp"
-                            android:text="1/7개"
+                            android:text="1숟가락"
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -576,7 +483,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step1"
+                            android:src="@drawable/recipe2_step1"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -586,7 +493,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="1.볼에 밀가루 중력분과, 물(약 100ml), 소금을 넣어 섞어 반죽을 만들어요."
+                            android:text="1. 감자는 크기에 따라 갯수를 조절해주세요^^"
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
@@ -601,7 +508,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step2"
+                            android:src="@drawable/recipe2_step2"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -611,7 +518,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="2. 위생비닐이나 그릇에 넣어 밀봉 한 후 냉장고에서 1~2시간 숙성해요."
+                            android:text="2. 감자는 껍질을 벗기고 잘 익도록 큐브모양으로 잘라요."
                             android:textColor="@color/black"
                             android:textSize="25sp" />
 
@@ -626,7 +533,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step3"
+                            android:src="@drawable/recipe2_step3"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -636,7 +543,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="3. 애호박은 편으로 썰어 4등분하고 대파와 청양고추는 어슷 썰어 준비해요."
+                            android:text="3. 끓는 물에 소금을 약간 넣고 감자를 넣어서 8-10분 익혀요."
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
@@ -651,7 +558,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step4"
+                            android:src="@drawable/recipe2_step4"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -661,7 +568,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="4. 깨끗이 손질한 닭은 웍에 식용유를 두르고 닭을 넣어 볶아요."
+                            android:text="4. 감자에 전분가루, 설탕, 소금, 마요네즈를 넣고  잘 섞어요."
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
@@ -676,7 +583,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step5"
+                            android:src="@drawable/recipe2_step5"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -686,7 +593,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="5. 닭을 살짝 익힌 후 물 6컵(약1.2L) 넣고 끓여요."
+                            android:text="5. 감자를 부드러워지도록 으깨요."
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
@@ -701,7 +608,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step6"
+                            android:src="@drawable/recipe2_step6"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -711,7 +618,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="6. 소금, 다진 마늘, 후추를 이용해 기호에 맞게 간을 해요."
+                            android:text="6. 둥글 납작하게 모양을 만들고 모짜렐라치즈를 1숟가락 넣어 동그랗게 뭉쳐줘요."
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
@@ -726,7 +633,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step7"
+                            android:src="@drawable/recipe2_step7"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -736,7 +643,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="7. 한소끔 끓으면 애호박과 청양고추를 넣어 한소끔 더 끓여요."
+                            android:text="7. 감자 4개를 사용하면 호떡 5개정도 나와요."
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
@@ -751,7 +658,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step8"
+                            android:src="@drawable/recipe2_step8"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -761,7 +668,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="8. 한소끔 끓으면 손에 물기를 조금 묻히고 수제비를 얇게 떠 넣어요.\"
+                            android:text="8. 팬에 버터를 녹여 앞뒤로 노릇하게 구워요."
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
@@ -776,7 +683,7 @@
                         <ImageView
                             android:layout_width="200dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/recipe1_step9"
+                            android:src="@drawable/recipe2_step9"
                             android:background="@drawable/recipe_image_view_radius"
                             android:clipToOutline="true" />
 
@@ -786,7 +693,7 @@
                             android:layout_height="wrap_content"
                             android:hint="step"
                             android:padding="30dp"
-                            android:text="9. 약 5분 정도 익힌 후 대파, 후추를 넣어 완성해요.\"
+                            android:text="9. 케찹이나 그릭요거트와 곁들여도 좋아요."
                             android:textSize="25sp"
                             android:textColor="@color/black" />
 
