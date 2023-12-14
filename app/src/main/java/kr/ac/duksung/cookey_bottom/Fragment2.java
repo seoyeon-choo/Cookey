@@ -1,5 +1,6 @@
 package kr.ac.duksung.cookey_bottom;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +30,8 @@ public class Fragment2 extends Fragment {
             @Override
             public void onClick(View v) {
                 // Perform action when buttonItem1 is clicked
-                Toast.makeText(getContext(), "Button 1 clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), RecipeDetailActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -38,7 +40,7 @@ public class Fragment2 extends Fragment {
             @Override
             public void onClick(View v) {
                 // Perform action when buttonItem1 is clicked
-                Toast.makeText(getContext(), "Button 2 clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(requireContext(), "Button 2 clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -47,7 +49,8 @@ public class Fragment2 extends Fragment {
             @Override
             public void onClick(View v) {
                 // Perform action when buttonItem1 is clicked
-                Toast.makeText(getContext(), "Button 3 clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(requireContext(), "Button 3 clicked", Toast.LENGTH_SHORT).show();
+
             }
         });
 
