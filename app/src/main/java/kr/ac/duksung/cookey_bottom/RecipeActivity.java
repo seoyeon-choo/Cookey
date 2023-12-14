@@ -52,9 +52,9 @@ public class RecipeActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container2, fragment4).commit();
 
         TabLayout tabs = findViewById(R.id.tabs);
-        tabs.addTab(tabs.newTab().setText("추천 레시피"));
-        tabs.addTab(tabs.newTab().setText("인기 레시피"));
-        tabs.addTab(tabs.newTab().setText("간단 레시피"));
+        tabs.addTab(tabs.newTab().setText("쿠키 추천 털기"));
+        tabs.addTab(tabs.newTab().setText("임박 재료 털기"));
+        tabs.addTab(tabs.newTab().setText("모든 재료 털기"));
 
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

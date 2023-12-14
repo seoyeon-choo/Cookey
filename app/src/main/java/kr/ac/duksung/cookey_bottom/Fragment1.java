@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-// 추천 레시피
+// 쿠키 추천 털기 레시피
 public class Fragment1 extends Fragment {
     @Nullable
     @Override
@@ -24,6 +24,7 @@ public class Fragment1 extends Fragment {
         LinearLayout btnRecItem1 = view.findViewById(R.id.btnRecItem1);
         LinearLayout btnRecItem2 = view.findViewById(R.id.btnRecItem2);
         LinearLayout btnRecItem3 = view.findViewById(R.id.btnRecItem3);
+
 
         btnRecItem1.setOnClickListener(new View.OnClickListener() {
             @Override

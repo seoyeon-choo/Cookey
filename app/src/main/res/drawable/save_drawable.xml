@@ -4,5 +4,5 @@
     <item android:state_checked="true"
         android:drawable="@drawable/saved" />
 
-    <item android:drawable="@drawable/save" />
+    <item android:drawable="@drawable/savesave" />
 </selector>

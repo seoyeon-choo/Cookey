@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-// 간단 레시피
+// 모든 재료 털기 레시피
 public class Fragment3 extends Fragment {
     @Nullable
     @Override
@@ -21,11 +21,11 @@ public class Fragment3 extends Fragment {
         View view = inflater.inflate(R.layout.fragment3, container, false);
         //return inflater.inflate(R.layout.fragment1, container, false);
 
-        LinearLayout btnShortItem1 = view.findViewById(R.id.btnShortItem1);
-        LinearLayout btnShortItem2 = view.findViewById(R.id.btnShortItem2);
-        LinearLayout btnShortItem3 = view.findViewById(R.id.btnShortItem3);
+        LinearLayout btnAllItem1 = view.findViewById(R.id.btnAllItem1);
+        LinearLayout btnAllItem2 = view.findViewById(R.id.btnAllItem2);
+        LinearLayout btnAllItem3 = view.findViewById(R.id.btnAllItem3);
 
-        btnShortItem1.setOnClickListener(new View.OnClickListener() {
+        btnAllItem1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Perform action when buttonItem1 is clicked
@@ -34,7 +34,7 @@ public class Fragment3 extends Fragment {
         });
 
 
-        btnShortItem2.setOnClickListener(new View.OnClickListener() {
+        btnAllItem2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Perform action when buttonItem1 is clicked
@@ -43,7 +43,7 @@ public class Fragment3 extends Fragment {
         });
 
 
-        btnShortItem3.setOnClickListener(new View.OnClickListener() {
+        btnAllItem3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Perform action when buttonItem1 is clicked

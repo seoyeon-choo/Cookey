@@ -27,7 +27,9 @@
             android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_1"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true"/>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -39,28 +41,30 @@
 
             <CheckBox
                 android:id="@+id/checkBox1"
-                android:layout_width="58dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
                 android:layout_height="48dp"
                 android:background="@drawable/save_drawable"
                 android:button="@null"
                 android:layout_gravity="right"/>
 
             <TextView
+                android:text="생크림 컵 카스테라"
                 android:id="@+id/totalRecipeTitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="[만만셰] 커피랑 먹으면 딱 좋은 생크림컵카스테라 by. 쎈쓰쟁이"
                 android:id="@+id/totalRecipeSum1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="35dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -71,7 +75,7 @@
                 android:layout_gravity="bottom|end"
                 android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="60분 이내" />
 
         </FrameLayout>
 
@@ -82,7 +86,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem2"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -91,13 +95,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_2"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -105,22 +111,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="메추리알 고추장조림"
                 android:id="@+id/totalRecipeTitle2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="매콤한 고추장 양념으로 만든 밥반찬~ \n메추리알 고추장조림"
                 android:id="@+id/totalRecipeSum2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -128,12 +144,13 @@
                 android:id="@+id/totalRecipeTime2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="20분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -141,7 +158,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem3"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -150,13 +167,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_3"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true"/>
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -164,22 +183,33 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="레드아이&amp;블러디메리"
                 android:id="@+id/totalRecipeTitle3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
+
             <TextView
+                android:text="해장으로 먹는 칵테일!? 토마토로 만드는 해장칵테일 2가지, \n레드아이&amp; 블러디메리"
                 android:id="@+id/totalRecipeSum3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -187,12 +217,13 @@
                 android:id="@+id/totalRecipeTime3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="20분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -200,7 +231,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem4"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -209,13 +240,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_4"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true"/>
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -223,22 +256,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="톰콜린스"
                 android:id="@+id/totalRecipeTitle4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="진 베이스로 만드는 입문용 칵테일 홈칵테일, 톰콜린스"
                 android:id="@+id/totalRecipeSum4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -246,20 +289,22 @@
                 android:id="@+id/totalRecipeTime4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="10분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
+
 
     <!-- Item 5 -->
     <LinearLayout
         android:id="@+id/btnTotalItem5"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -268,13 +313,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_5"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true"/>
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -282,22 +329,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="참깨고등어구이"
                 android:id="@+id/totalRecipeTitle5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="고등어 이렇게 구우면 비린내 없이 맛있어요, 참깨고등어구이"
                 android:id="@+id/totalRecipeSum5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -305,12 +362,13 @@
                 android:id="@+id/totalRecipeTime5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="30분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -318,7 +376,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem6"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -327,13 +385,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_6"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true"/>
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -341,22 +401,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="고구마상투과자"
                 android:id="@+id/totalRecipeTitle6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="아이들 간식, 다이어트 간식으로도 훌륭해요, 고구마상투과자"
                 android:id="@+id/totalRecipeSum6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -364,12 +434,13 @@
                 android:id="@+id/totalRecipeTime6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="60분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -377,7 +448,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem7"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -386,13 +457,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_7"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -400,22 +473,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="순두부달걀죽"
                 android:id="@+id/totalRecipeTitle7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="따끈하고 든든한 다이어트 한끼! 순두부달걀죽"
                 android:id="@+id/totalRecipeSum7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -423,21 +506,21 @@
                 android:id="@+id/totalRecipeTime7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="20분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
-
 
     <!-- Item 8 -->
     <LinearLayout
         android:id="@+id/btnTotalItem8"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -446,13 +529,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_8"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -460,22 +545,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="닭한마리손수제비"
                 android:id="@+id/totalRecipeTitle8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="[만만셰] 시원하고 담백한 닭한마리손수제비 by.집밥새댁"
                 android:id="@+id/totalRecipeSum8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -483,21 +578,21 @@
                 android:id="@+id/totalRecipeTime8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="60분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
-
 
     <!-- Item 9 -->
     <LinearLayout
         android:id="@+id/btnTotalItem9"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -506,13 +601,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_9"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -520,44 +617,54 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="단팥라떼"
                 android:id="@+id/totalRecipeTitle9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="할미입맛은 무조건 좋아하는 라떼, 단팥라떼"
                 android:id="@+id/totalRecipeSum9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/totalRecipeTime9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
+                android:textColor="@color/darkgrey"
+                android:text="15분 이내" />
 
-        <TextView
-            android:id="@+id/totalRecipeTime9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/darkgrey"
-            android:text="시간" />
+        </FrameLayout>
+
 
     </LinearLayout>
-
 
     <!-- Item 10 -->
     <LinearLayout
         android:id="@+id/btnTotalItem10"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -566,13 +673,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_10"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -580,22 +689,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="리치즈그라탕"
                 android:id="@+id/totalRecipeTitle10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="브로콜리 맛있게 먹는 법!! 브로콜리치즈그라탕"
                 android:id="@+id/totalRecipeSum10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -603,21 +722,21 @@
                 android:id="@+id/totalRecipeTime10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="30분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
-
 
     <!-- Item 11 -->
     <LinearLayout
         android:id="@+id/btnTotalItem11"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -626,13 +745,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_11"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -640,35 +761,46 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="쉬림프사워크림샐러드"
                 android:id="@+id/totalRecipeTitle11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="[만만셰] 사랑하는 딸을 위한 요리 '쉬림프사워크림샐러드' by 집밥새댁"
                 android:id="@+id/totalRecipeSum11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/totalRecipeTime11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
+                android:textColor="@color/darkgrey"
+                android:text="30분 이내" />
 
-        <TextView
-            android:id="@+id/totalRecipeTime11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginEnd="10dp"
-            android:textColor="@color/darkgrey"
-            android:text="시간" />
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -676,7 +808,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem12"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -685,13 +817,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_12"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -699,22 +833,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox12"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="감자치즈호떡"
                 android:id="@+id/totalRecipeTitle12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="NO밀가루! 감자치즈호떡 아이들 간식으로 딱 좋아요."
                 android:id="@+id/totalRecipeSum12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -722,12 +866,13 @@
                 android:id="@+id/totalRecipeTime12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="15분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -735,7 +880,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem13"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -744,13 +889,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_13"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -758,22 +905,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox13"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="오징어솥밥"
                 android:id="@+id/totalRecipeTitle13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="[만만셰] 오징어를 활용한 간단한 솥밥, '오징어솥밥'by.승혜의야미로그"
                 android:id="@+id/totalRecipeSum13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -781,12 +938,13 @@
                 android:id="@+id/totalRecipeTime13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="30분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -794,7 +952,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem14"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -803,13 +961,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_14"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -817,22 +977,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox14"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="호두 구겔호프"
                 android:id="@+id/totalRecipeTitle14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="특별한 날을 위한 호두 구겔호프"
                 android:id="@+id/totalRecipeSum14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -840,12 +1010,13 @@
                 android:id="@+id/totalRecipeTime14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="60분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -853,7 +1024,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem15"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -862,13 +1033,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_15"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -876,22 +1049,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox15"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="불닭팽이덮밥"
                 android:id="@+id/totalRecipeTitle15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="오독오독 중독적인 맛~ 맵찔이도 한그릇 다 먹는 불닭팽이덮밥!"
                 android:id="@+id/totalRecipeSum15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -899,12 +1082,13 @@
                 android:id="@+id/totalRecipeTime15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="10분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -912,7 +1096,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem16"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -921,13 +1105,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_16"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -935,22 +1121,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox16"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="꽁치시래기추어탕"
                 android:id="@+id/totalRecipeTitle16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="[만만세] 꽁치로 만드는 뜨끈한 추어탕, 꽁치시래기추어탕 by.승혜의야미로그"
                 android:id="@+id/totalRecipeSum16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -958,12 +1154,13 @@
                 android:id="@+id/totalRecipeTime16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="30분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -971,7 +1168,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem17"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -980,13 +1177,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_17"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -994,22 +1193,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="호두토마토미트볼"
                 android:id="@+id/totalRecipeTitle17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="고소함과 유럽의 향기 가득 호두토마토미트볼"
                 android:id="@+id/totalRecipeSum17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -1017,12 +1226,13 @@
                 android:id="@+id/totalRecipeTime17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="30분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -1030,7 +1240,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem18"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -1039,13 +1249,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_18"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -1053,22 +1265,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox18"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="깨소금오이샐러드"
                 android:id="@+id/totalRecipeTitle18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="초간단 오이만 있으면 완성~ 깨소금오이샐러드"
                 android:id="@+id/totalRecipeSum18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -1076,12 +1298,13 @@
                 android:id="@+id/totalRecipeTime18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="10분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -1089,7 +1312,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem19"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -1098,13 +1321,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_19"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -1112,22 +1337,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox19"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="꿀밤라떼"
                 android:id="@+id/totalRecipeTitle19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="가을에 어울리는 라떼한잔 간편하게 만들었어요 | 꿀밤라떼"
                 android:id="@+id/totalRecipeSum19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -1135,12 +1370,13 @@
                 android:id="@+id/totalRecipeTime19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="20분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
+
 
     </LinearLayout>
 
@@ -1148,7 +1384,7 @@
     <LinearLayout
         android:id="@+id/btnTotalItem20"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -1157,13 +1393,15 @@
         android:background="@drawable/recipe_button" >
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:src="@drawable/android_img" />
+            android:src="@drawable/recipe_20"
+            android:background="@drawable/recipe_image_view_radius"
+            android:clipToOutline="true" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -1171,22 +1409,32 @@
             android:orientation="vertical" >
 
 
+            <CheckBox
+                android:id="@+id/checkBox20"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:background="@drawable/save_drawable"
+                android:button="@null"
+                android:layout_gravity="right"/>
+
             <TextView
+                android:text="피나콜라다"
                 android:id="@+id/totalRecipeTitle20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:text="Item 1"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
+                android:text="통조림 파인애플만으로도 맛있게 피나콜라다 만들"
                 android:id="@+id/totalRecipeSum20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:layout_marginTop="3dp"
-                android:text="explanation"
+                android:layout_marginTop="60dp"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -1194,14 +1442,13 @@
                 android:id="@+id/totalRecipeTime20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="40dp"
                 android:textColor="@color/darkgrey"
-                android:text="시간" />
+                android:text="10분 이내" />
 
-        </LinearLayout>
+        </FrameLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
