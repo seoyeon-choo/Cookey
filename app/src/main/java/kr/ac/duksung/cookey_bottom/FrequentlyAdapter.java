@@ -38,8 +38,8 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         this.dataList = dataList;
     }
 
-    public void setItemBorderColor(View view, int getRemainingDays) {
-        if (getRemainingDays <= 3) {
+    public void setItemBorderColor(View view, int getremainingDays) {
+        if (getremainingDays <= 3) {
             view.setBackgroundResource(R.drawable.red_border_background); // Use a red border drawable
         } else {
             // Use the default border drawable or any other color as needed
@@ -105,25 +105,21 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         int imageResource = getDrawableResourceId(holder.itemView, item.getImageFileName());
         holder.ingredientImageView.setImageResource(imageResource);
 
-
-        int remainingDaysValue = calculateRemainingDays(item.getExpiryDate());
+        // Set the border color based on the remaining days
+        int remainingDaysValue = calculateRemainingDays(item.getExpiryDate()); // Replace this with your actual logic
         setItemBorderColor(holder.itemView, remainingDaysValue);
+
         // smallButton에 대한 클릭 이벤트 처리
         if (holder.smallButton != null) {
             holder.smallButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    // 여기서 LookActivity로 이동하는 코드 작성
-                    String url = item.getUrl(); // item 변수로 수정
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.kurly.com/search?sword=%EB%8B%B9%EA%B7%BC"));
+                    String ingredientName = item.getIngredientName(); // item 변수로 수정
+                    String encodedIngredientName = Uri.encode(ingredientName);
+                    String url = "https://www.kurly.com/search?sword=" + encodedIngredientName;
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     view.getContext().startActivity(intent);
-//                    String urlString = "https://www.kurly.com/search";
-//                    Intent intent = getIntent();
-//                    String food = intent.getStringExtra("food");
-//
-//                    urlString = urlString + "?sword=" + food;
-//                    JsoupAsyncTask foodTask = new JsoupAsyncTask();
-//                    foodTask.execute(urlString);
                 }
             });
         }
@@ -135,27 +131,6 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
         Log.d("DrawableResource", "Resource ID for " + imageName + ": " + resourceId);
         return resourceId;
     }
-
-
-//    private Intent getIntent() {
-//        return null;
-//    }
-
-//    private class JsoupAsyncTask extends AsyncTask<String, Void, Document> {
-//
-//        protected Document doInBackground(String... params) {
-//            Document doc = null;
-//            try {
-//                doc = Jsoup.connect(params[0]).get();
-//            } catch (Exception e) {
-//                Toast.makeText(getBaseContext(), "network error",
-//                        Toast.LENGTH_SHORT).show();
-//            }
-//            return doc;
-//        }
-//    }
-
-
 
     @Override
     public int getItemCount() {

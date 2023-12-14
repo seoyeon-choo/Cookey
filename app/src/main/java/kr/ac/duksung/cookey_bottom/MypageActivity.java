@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -56,6 +57,17 @@ public class MypageActivity extends AppCompatActivity {
             }
         });
 
+        // imageButton2(리마인더 버튼)
+        ImageButton settingsButton = findViewById(R.id.imageButton2);
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // settingsButton를 클릭하면 activity_settings.xml을 보여주는 액티비티로 이동
+                Intent intent = new Intent(MypageActivity.this, Settings.class);
+                startActivity(intent);
+            }
+        });
+
         //쿡키 버튼을 누를 때 메인 페이지로 돌아가기
         addButton = findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +79,7 @@ public class MypageActivity extends AppCompatActivity {
                 finish();
             }
         });
+
 
         //네비게이션 바 아이콘 페이지로 이동
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
