@@ -132,10 +132,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:hint="summary"
+                    android:layout_marginTop="20dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="70dp"
                     android:text="시원하고 담백한 닭한마리손수제비"
-                    android:textSize="28dp"
+                    android:textSize="35dp"
+                    android:textColor="@color/black"
                     app:layout_constraintBaseline_toBottomOf="parent"
                     app:layout_constraintBaseline_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -148,6 +150,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="24dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
                     android:hint="minute"
                     android:text="60분 이내"
                     app:layout_constraintEnd_toStartOf="@+id/servings"
@@ -157,6 +161,8 @@
                     android:id="@+id/servings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="24dp"
                     android:hint="servings"
@@ -170,6 +176,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="24dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
                     android:hint="difficulty"
                     android:text="아무나"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -181,7 +189,6 @@
                     android:layout_height="210dp"
                     android:layout_marginTop="25dp"
                     android:background="@drawable/rounded_border"
-                    android:padding="10dp"
                     android:src="@android:drawable/btn_star"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -204,7 +211,8 @@
                         android:layout_height="wrap_content"
                         android:padding="23dp"
                         android:text="재료"
-                        android:textSize="20sp" />
+                        android:textSize="30dp"
+                        android:textColor="@color/black" />
 
                     <!-- 3dp stroke로 구분선 -->
                     <View
@@ -231,7 +239,8 @@
         다진마늘                                                                                                                             0.5T\n
         대파                                                                                                                                       1대\n
         애호박                                                                                                                               1/7개"
-                        android:textSize="20sp" />
+                        android:textSize="30sp"
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -241,7 +250,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    android:layout_marginBottom="77dp"
+                    android:layout_marginBottom="100dp"
                     android:background="@drawable/rounded_border"
                     android:orientation="vertical"
                     app:layout_constraintTop_toBottomOf="@id/ingredient">
@@ -253,7 +262,8 @@
                         android:layout_height="wrap_content"
                         android:padding="23dp"
                         android:text="조리 순서"
-                        android:textSize="20sp" />
+                        android:textSize="30sp"
+                        android:textColor="@color/black"/>
 
                     <!-- 3dp stroke로 구분선 -->
                     <View
@@ -261,40 +271,244 @@
                         android:layout_height="3dp"
                         android:background="@color/darkgrey" />
 
+
                     <!-- 조리 순서 1 -->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
 
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/recipe_1"/>
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step1"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
 
                         <TextView
-                            android:id="@+id/step"
+                            android:id="@+id/step1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="step"
-                            android:padding="23dp"
-                            android:text="1. 볼에 밀가루 중력분과, 물(약 100ml), 소금을 넣어 섞어 반죽을 만들어요."
-                            android:textSize="20sp" />
+                            android:padding="30dp"
+                            android:text="1.볼에 밀가루 중력분과, 물(약 100ml), 소금을 넣어 섞어 반죽을 만들어요."
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
 
                     </LinearLayout>
 
+                    <!-- 조리 순서 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step2"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="2. 위생비닐이나 그릇에 넣어 밀봉 한 후 냉장고에서 1~2시간 숙성해요."
+                            android:textColor="@color/black"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                    <!-- 조리 순서 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step3"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="3. 애호박은 편으로 썰어 4등분하고 대파와 청양고추는 어슷 썰어 준비해요."
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- 조리 순서 4 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step4"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="4. 깨끗이 손질한 닭은 웍에 식용유를 두르고 닭을 넣어 볶아요."
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- 조리 순서 5 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step5"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="5. 닭을 살짝 익힌 후 물 6컵(약1.2L) 넣고 끓여요."
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- 조리 순서 6 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step6"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="6. 소금, 다진 마늘, 후추를 이용해 기호에 맞게 간을 해요."
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- 조리 순서 7 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step7"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="7. 한소끔 끓으면 애호박과 청양고추를 넣어 한소끔 더 끓여요."
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- 조리 순서 8 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step8"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="8. 한소끔 끓으면 손에 물기를 조금 묻히고 수제비를 얇게 떠 넣어요.\"
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <!-- 조리 순서 9 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/recipe1_step9"
+                            android:background="@drawable/recipe_image_view_radius"
+                            android:clipToOutline="true" />
+
+                        <TextView
+                            android:id="@+id/step9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="step"
+                            android:padding="30dp"
+                            android:text="9. 약 5분 정도 익힌 후 대파, 후추를 넣어 완성해요.\"
+                            android:textSize="25sp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="50dp"
+                        android:textAlignment="center"
+                        android:textSize="15dp"
+                        android:text="위 레시피는 “만개의 레시피”를 기반으로 작성되었습니다."
+                        app:layout_constraintTop_toBottomOf="@id/recipeSteps" />
 
                 </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="97dp"
-                    android:paddingLeft="15dp"
-                    android:text="위 레시피는 “만개의 레시피”를 기반으로 작성되었습니다."
-                    app:layout_constraintTop_toBottomOf="@id/recipeSteps" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
