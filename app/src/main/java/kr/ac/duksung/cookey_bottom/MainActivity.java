@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<FrequentlyItem> dataList = new ArrayList<>();
         dataList.add(new FrequentlyItem("감자", 1, "2023-12-05", "9일", "20일","po"));
-        dataList.add(new FrequentlyItem("달걀", 8, "2023-12-14", "9일", "10일", "egg"));
+        dataList.add(new FrequentlyItem("달걀", 8, "2023-12-09", "4일", "10일", "egg"));
         dataList.add(new FrequentlyItem("치즈", 3, "2023-12-14", "69일", "70일", "che"));
 
         FrequentlyAdapter adapter = new FrequentlyAdapter(dataList);
