@@ -38,7 +38,7 @@ public class LookActivity extends AppCompatActivity {
         // Initialize the data list
         dataList = new ArrayList<>();
         dataList.add(new FrequentlyItem("감자", 1, "2023-12-05", "9일", "20일","po"));
-        dataList.add(new FrequentlyItem("달걀", 8, "2023-12-14", "9일", "10일", "egg"));
+        dataList.add(new FrequentlyItem("달걀", 8, "2023-12-09", "4일", "10일", "egg"));
         dataList.add(new FrequentlyItem("닭고기", 1, "2023-12-14", "1일", "2일", "chi"));
         dataList.add(new FrequentlyItem("당근", 1, "2023-12-13", "18일", "20일", "carrot"));
         dataList.add(new FrequentlyItem("브로콜리", 1, "2023-12-14", "4일", "5일", "broccoli"));
