@@ -187,7 +187,7 @@ public class FrequentlyAdapter extends RecyclerView.Adapter<FrequentlyAdapter.Fr
 
 
     private void setItemBorderColor(View view, String ingredientName) {
-        if ("감자".equals(ingredientName) || "닭고기".equals(ingredientName)) {
+        if ("감자".equals(ingredientName)) {
             // If the item is "감자", set a red border
             view.setBackgroundResource(R.drawable.red_border_background);
         } else {
