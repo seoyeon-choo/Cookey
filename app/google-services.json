@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "533798900280",
+    "firebase_url": "https://cookey-16676-default-rtdb.firebaseio.com",
+    "project_id": "cookey-16676",
+    "storage_bucket": "cookey-16676.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533798900280:android:27d5e1162866976b880ccd",
+        "android_client_info": {
+          "package_name": "kr.ac.duksung.cookey_bottom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoKjxIurOaW7c8ptp0ZGnUQ76ylBh4W7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -22,6 +22,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.ktx.Firebase;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -92,6 +95,17 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(updateTimeRunnable, 100);
         notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel();
+
+        //코틀린 문법
+//        val database = Firebase.database
+//        val myRef = database.getReference("message")
+//        myRef.setValue("Success")
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+        myRef.setValue("Success");
+
+
     }
 
 
